@@ -1,13 +1,14 @@
 
-<% if flash[:succes] %>
-  <p><%= flash[:succes] %></p>
-<% end %>
+<body class="show-main">
+ <p class ="message"><%= flash[:succes] %></p>
 
 
-<p>Title:</p>
-<%= @book.title %>
-<p>Body</p>
-<%= @book.body %>
+<form class="form">
+    <p><strong>Title:</strong><%= @book.title %></p>
+    <p><strong>Body:</strong><%= @book.body %></p>
+</form>
 
-<%= link_to "Edit",edit_book_path(@book) %>
-<%= link_to "Back",books_path(@books) %>
+<%= link_to "Edit",edit_book_path(@book), class: "link" %>
+|
+<%= link_to "Back",books_path(@books), class: "link" %>
+</body>
