@@ -54,3 +54,7 @@ label{
 .errors{
   color: red;
 }
+
+.message{
+    color: green;
+}
