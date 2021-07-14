@@ -1,14 +1,13 @@
 
-<body class="show-main">
- <p class ="message"><%= flash[:succes] %></p>
+
+     <p class ="message"><%= flash[:succes] %></p>
 
 
-<form class="form">
-    <p><strong>Title:</strong><%= @book.title %></p>
-    <p><strong>Body:</strong><%= @book.body %></p>
-</form>
+   
+        <p><strong>Title:</strong><%= @book.title %></p>
+        <p><strong>Body:</strong><%= @book.body %></p>
+    
 
-<%= link_to "Edit",edit_book_path(@book), class: "link" %>
-|
-<%= link_to "Back",books_path(@books), class: "link" %>
-</body>
+    <%= link_to "Edit",edit_book_path(@book), class: "link" %>
+    |
+    <%= link_to "Back",books_path(@books), class: "link" %>

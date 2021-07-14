@@ -30,14 +30,6 @@ p,td{
     color: #000;
 }
 
-.top-main string{
-    font-weight: bold;
-}
-
-.top-main link{
-
-}
-
 
 
  body{
@@ -50,9 +42,6 @@ p,td{
  }
 
 
-table{
-
-}
 
 div.field, div.actions {
     margin-bottom: 10px;
@@ -62,3 +51,6 @@ label{
     display: block
 }
 
+.errors{
+  color: red;
+}
